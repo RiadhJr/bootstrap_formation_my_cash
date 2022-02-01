@@ -61,46 +61,74 @@ $(document).ready(function() {
             items:4,
         }
     }
-});
+  });
 
-/* ---------------------- testimonials carousel ---------------- */
-$('.testimonials-carousel').owlCarousel({
-  loop:true,
-  margin: 0,
-  autoplay: true,
-  responsiveClass:true,
-  responsive:{
-      0:{
-          items:1,
-      },
-      600:{
-          items:2,
-      },
-      1000:{
-          items:3,
-      }
-  }
-});
+ /* ---------------------- testimonials carousel ---------------- */
+    $('.testimonials-carousel').owlCarousel({
+    loop:true,
+    margin: 0,
+    autoplay: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+    });
 
-/* ---------------------- team carousel ---------------- */
-$('.team-carousel').owlCarousel({
-  loop:true,
-  margin: 0,
-  autoplay: true,
-  responsiveClass:true,
-  responsive:{
-      0:{
-          items:1,
-      },
-      600:{
-          items:2,
-      },
-      1000:{
-          items:3,
-      }
-  }
-});
+    /* ---------------------- team carousel ---------------- */
+    $('.team-carousel').owlCarousel({
+    loop:true,
+    margin: 0,
+    autoplay: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+    });
 
+    /*---------------------------- page scrolling - scrollit ------------------*/
+    $.scrollIt({
+        topOffset: -50
+    });
 
+    /*---------------------------- navbar collapse ------------------*/
+    $("nav-link").on("click", function(){
+        $(".navbar-collapse").collapse("hide");
+    });
 
+    /*----------------------------toggle theme - light and dark mode-----------------*/
+    function toggleTheme(){
+        updateIcon();
+    }
+    toggleTheme();
+    $(".toggle-theme").on("click",function(){
+        if($("body").hasClass("dark")){
+            
+        }
+    });
+    function updateIcon(){
+        if($("body").hasClass("dark")){
+            $(".toggle-theme i").removeClass("fa-moon");
+            $(".toggle-theme i").addClass("fa-sun");
+        }
+        else{
+            $(".toggle-theme i").removeClass("fa-sun");
+            $(".toggle-theme i").addClass("fa-moon");
+        }
+    }
 });

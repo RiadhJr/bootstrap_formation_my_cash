@@ -18,35 +18,35 @@
 
 
         <!--navbar start-->
-        <nav class="navbar navbar-expand-md fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <!--navbar brand-->
               <a class="navbar-brand" href="index.html">My Cash</a>
 
               <!--toggler/collapsibe button-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
               </button>
               <!--navbar links-->
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav ms-auto ">
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Acceuil</a>
+                    <a class="nav-link active" data-scroll-nav="0" href="#">Acceuil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" onMouseOver="this.style.color = 'red';" onMouseOut="this.style.color= 'white';">A propos</a> <!--change color on hover pour l'icone a propos-->
+                    <a class="nav-link" data-scroll-nav="1" href="#" onMouseOver="this.style.color = 'red';" onMouseOut="this.style.color= 'white';">A propos</a> <!--change color on hover pour l'icone a propos-->
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" data-scroll-nav="2" href="#">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Captures</a>
+                    <a class="nav-link" data-scroll-nav="4" href="#">Captures</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Tarif</a>
+                    <a class="nav-link" data-scroll-nav="5" href="#">Tarif</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" data-scroll-nav="6" href="#">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -55,7 +55,7 @@
         <!--navbar end-->
 
         <!--home section start-->
-        <section class="home d-flex align-items-center">
+        <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
           <div class="effect-wrap">
             <i class="fas fa-plus effect effect-1"></i>
             <i class="fas fa-plus effect effect-2"></i>
@@ -63,7 +63,7 @@
           </div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7 col-md-7">
+                    <div class="col-md-7">
                         <div class="home-text">
                             <h1>La mailleur caisse pour votre business</h1>
                             <p>Lorem ipsum dolor sit amet,
@@ -71,14 +71,14 @@
                                   sed do eiusmod tempor incididunt 
                                   ut labore et dolore magna aliqua.</p>
                                   <div class="home-btn">
-                                      <a href="#" class="btn btn-1">Voir Demo</a>
+                                      <a href="#" data-scroll-goto="3" class="btn btn-1">Voir Demo</a>
                                       <button type="button" class="btn btn-1 video-play-btn">
                                           <i class="fas fa-play"></i>
                                       </button>
                                   </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-5 text-center">
+                    <div class="col-md-5 text-center">
                         <div class ="home-img">
                             <div class="circle"></div>
                             <img src="img/1.jpg" alt="screenshoot mobile">
@@ -90,7 +90,7 @@
         <!--home section end-->
 
         <!--features section starat-->
-        <section class="features section-padding">
+        <section class="features section-padding" id="features" data-scroll-index="1">
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-lg-8"> <!--bg-warning pour dire couleurjaune d'avertissement-->
@@ -182,7 +182,7 @@
         <!--fun fact section end-->
 
         <!--app screenshot section start-->
-        <section class="app-screenshots section-padding">
+        <section class="app-screenshots section-padding" id="screenshots" data-scroll-index="2">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
@@ -215,7 +215,7 @@
         <!--app screenshot section end-->
 
         <!--app download section start-->
-        <section class="app-download section-padding">
+        <section class="app-download section-padding" data-scroll-index="3">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
@@ -306,7 +306,7 @@
         <!--how it works section end-->
 
         <!--testimonails section start-->
-        <section class="testimonials section-padding">
+        <section class="testimonials section-padding" id="testimonials" data-scroll-index="4">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
@@ -392,7 +392,7 @@
         <!--testimonails section end-->
 
         <!--pricing section start-->
-        <section class="pricing section-padding">
+        <section class="pricing section-padding" id="pricing" data-scroll-index="5">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
@@ -401,7 +401,7 @@
                 </div>
               </div>
             </div> 
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col-lg-4 col-md-6">
                 <div class="pricing-plan">
                   <div class="pricing-header">
@@ -591,7 +591,7 @@
         <!--faq section end-->
 
         <!--contact section start-->
-        <section class="contact section-padding">
+        <section class="contact section-padding" data-scroll-index="6">
           <div class="container">
             <div class="row justify-content-center">
               <div class="col-lg-8">
@@ -601,27 +601,27 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-4col-md-5">
+              <div class="col-lg-4 col-md-5">
                 <div class="contact-info">
-                  <h3>For any queriesand support</h3>
+                  <h3>For any queries and support</h3>
                   <div class="contact-info-item">
                     <i class="fas fa-location-arrow"></i>
-                    <h3>address</h3>
+                    <h4>address</h4>
                     <p>centre ville, medenine</p>
                   </div>
                   <div class="contact-info-item">
                     <i class="fas fa-envelope"></i>
-                    <h3>email</h3>
+                    <h4>email</h4>
                     <p>ilef@gmail.com</p>
                   </div>
                   <div class="contact-info-item">
                     <i class="fas fa-phone"></i>
-                    <h3>telephone</h3>
+                    <h4>telephone</h4>
                     <p>88008800</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8col-md-7">
+              <div class="col-lg-8 col-md-7">
                 <div class="contact-form">
                   <form>
                     <div class="row">
@@ -638,16 +638,28 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="form-froup">
+                        <div class="form-group">
                           <input type="text" placeholder="your phone" class="form-control">
                         </div>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="form-froup">
+                        <div class="form-group">
                           <input type="text" placeholder="subject" class="form-control">
                         </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <textarea placeholder="your message" class="form-control"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <button type="submit" class="btn btn-2">Send Message</button>
                       </div>
                     </div>
                   </form>
@@ -657,6 +669,67 @@
           </div>
         </section>
         <!--contact section end-->
+
+        <!--footer start-->
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-col">
+                  <h3>A propos de nous</h3>
+                  <p>Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-col">
+                  <h3>societé</h3>
+                  <ul>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms and conditions</a></li>
+                    <li><a href="#">lates blogs</a></li>
+                    <li><a href="#">app services</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-col">
+                  <h3>liens rapides</h3>
+                  <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#features">features</a></li>
+                    <li><a href="#screenshots">screenshots</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#testimonials">testimonials</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-col">
+                  <h3>social pages</h3>
+                  <ul>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">linkedin</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <p class="copyright-text">&copy;2021 @ Ilef info-service</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!--footer end-->
+
+        <!--toggle theme start - light and dark mode-->
+        <div class="toggle-theme">
+          <i class="fas"></i>
+        </div>
+        <!--toggle theme end-->
         
         <!--video popup start-->
         <div class="video-popup">
@@ -684,6 +757,8 @@
     <script src="js/bootstrap.min.js"></script>
     <!--owl carousel js-->
     <script src="js/owl.carousel.min.js"></script>
+    <!--scroll js-->
+    <script src="js/scrollIt.min.js"></script>
     <!--main js-->
     <script src="js/main.js"></script>    
     </body>
