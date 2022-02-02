@@ -117,9 +117,14 @@ $(document).ready(function() {
     }
     toggleTheme();
     $(".toggle-theme").on("click",function(){
+        $("body").toggleClass("dark");
         if($("body").hasClass("dark")){
-            
+            localStorage.setItem("my-cash","dark");
         }
+        else{
+            localStorage.setItem("my-cash","light");
+        }
+        updateIcon();
     });
     function updateIcon(){
         if($("body").hasClass("dark")){
