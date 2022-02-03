@@ -1,5 +1,10 @@
 
 
+$(window).on("load",function(){
+    /*-----------------preloader-------------------*/
+    $(".preloader").fadeOut("slow");
+});
+
 $(document).ready(function() {
     /*----------------navbar shrink----------------*/
     $(window).on("scroll",function(){
@@ -113,6 +118,14 @@ $(document).ready(function() {
 
     /*----------------------------toggle theme - light and dark mode-----------------*/
     function toggleTheme(){
+        if(localStorage.getItem("my-cash") !== null){
+            if(localStorage.getItem("my-cash") === "dark"){
+                $("body").addClass("dark");
+            }
+            else{
+                $("body").removeClass("dark");
+            }
+        }
         updateIcon();
     }
     toggleTheme();
