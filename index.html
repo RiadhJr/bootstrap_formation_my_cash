@@ -36,15 +36,15 @@
               <div class="collapse navbar-collapse" id="collapsibleNavbar"> <!--le mot cle "id" pour donner une adress pour cet div en appelant "#l'id souhaiter"-->
                 <ul class="navbar-nav ms-auto "> <!--ms pour dire margin start-->
                   <li class="nav-item">
-                    <a class="nav-link active" data-scroll-nav="0" href="#">Acceuil</a> <!--pour que cette item est l'active par defaut-->
+                    <a class="nav-link active" data-scroll-nav="0" href="#">Acceuil</a> <!--pour que cette item est l'active par defaut car c'est la section qui s'affiche en premier-->
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item"> <!--nav-item et nav-link sont des class de bootstrap mais on va les modifier dans style.css-->
                     <a class="nav-link" data-scroll-nav="1" href="#" onMouseOver="this.style.color = 'red';" onMouseOut="this.style.color= 'white';">A propos</a> <!--change color on hover pour l'icone a propos-->
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link" data-scroll-nav="2" href="#">Services</a>
+                    <a class="nav-link" data-scroll-nav="2" href="#">Services</a> <!--le data-scroll-nav est l'option pour identifie et lier le nav_item a la section -->
                   </li>
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" data-scroll-nav="4" href="#">Captures</a>
                   </li>
                   <li class="nav-item">
@@ -52,23 +52,23 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-scroll-nav="6" href="#">Contact</a>
-                  </li>
-                </ul>
+                  </li> <!--li pour list item -->
+                </ul> <!--ul pour unordered list-->
               </div>
             </div>
           </nav>
         <!--navbar end-->
 
         <!--home section start-->
-        <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
-          <div class="effect-wrap">
-            <i class="fas fa-plus effect effect-1"></i>
-            <i class="fas fa-plus effect effect-2"></i>
-            <i class="fas fa-circle-notch effect effect-3"></i>
+        <section class="home d-flex align-items-center" id="home" data-scroll-index="0"> 
+          <div class="effect-wrap"> <!--annimation sur le home section -->
+            <i class="fas fa-plus effect effect-1"></i> <!--signe + qui tourne sur place-->
+            <i class="fas fa-plus effect effect-2"></i> <!--signe + qui tourne sur place-->
+            <i class="fas fa-circle-notch effect effect-3"></i> <!--cercle-notch qui translate-->
           </div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-7">
+            <div class="container"> <!--container : c'est l'element qui enveloppe ensemble d'element-->
+                <div class="row align-items-center"> <!--row pour dire ligne : on va prendre tout la largeur du container-->
+                    <div class="col-md-7"> <!--le row est par defaut diviser sur 12 partie -->
                         <div class="home-text">
                             <h1>La mailleur caisse pour votre business</h1>
                             <p>Lorem ipsum dolor sit amet,
