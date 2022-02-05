@@ -1,7 +1,7 @@
 
 
 $(window).on("load",function(){
-    /*-----------------preloader-------------------*/
+    /*-----------------preloader--------------------*/
     $(".preloader").fadeOut("slow");
 });
 

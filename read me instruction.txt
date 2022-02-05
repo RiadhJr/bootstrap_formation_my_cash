@@ -1,0 +1,33 @@
+/*---------------------------template du page d'acceuil avec bootstrapp--------------------------------*/
+1--creer dossier MyCash
+2--creer un fichier index.html
+3--creer un dossier css: pour les fichiers css
+ 	 un dossier js: pour les fichiers js
+ 	 un dossier img pour les images
+4--dans le dossier css: fichier bootstrap.min.css c'est le fichier du bootstrap 5 telecharger a paryir du site de bootstrap "https://getbootstrap.com/docs/5.1/getting-started/download/"
+			fichier style.css c'est notre fichier css personnalise dans la quel on va ajouter nos styles 
+			fichier owl.carousel.min.css c"'est le fichier du bbliotheque de carousel ; on va l'utiliser pour la partie carousel ; dans notre page our les itemes roulantes (peut etre a une autre utilité) 
+			fichier font-awesome.css c'est le fichier du bibliotheque font-awesome pour les chois des icones pour notre projet (peut etre a une autre utilité)  
+5--dans le  dossier js: fichier bootstrap.min.js c'est le fichier du bootstratp  5 telecherger a partir du site du bootstratp 
+			fichier jquery-3.6.0.min.js c'est le fichier de la bibliotheque du jquery pour l'appel de fonction pre definit (meme si bootstrap 5 va se debarraser de jquery mais pour notre projet on besoin de l'ajouter pour quelque appel de fonctions)
+			fichier popper.min.js c'est le fichier du bibiliotheque du javascript (pour les deux fichier jquery et pooper: pour le moment je ne suis pas capable de comprendre le contenue mais les fichiers sont in diponsable pour faire fonctionne et appeler des fonction pres definies)
+			fichier owl.carousel.min.js c'est le fichier du bibliotheque de carousel (pour notre projet le fait de tourner un liste de objet)
+			fichier main.js c'est le fichier propre a nous, on va creer de function pour utiliser selon le besoin (j'ai pas un idée claire sur js mais je suis le formateur meme si j'ai pas grande idée)
+			scrollIt.min.js c'est le fichier qui contient de fonction qu'on va utilise pour lier la navbar avec les sectionou partie de la page 
+//////////******************/*////////////////
+remarque: seules : style.css et main.js sont propre a  nous 	
+		   tous les autres sont a telecharger à partir su site officiel de chaqu'une
+//////////******************/*////////////////
+6--pour le fichier index.html 
+			 au niveau du head on va appeler les fichier css dans l'ordre: 1-<!--owl carousel css-->
+											2-<!--font awesome css-->
+											3-<!--bootstrap css-->
+											4-<!--main css-->
+			au niveau du body : juste avant de fermer la balise body on va appler les fichiers js dans lordere:
+							 				1-<!--jquery js-->
+											2-<!--popper js-->
+											3-<!--bootstrap js-->
+											4-<!--owl carousel js-->
+											5-<!--scroll js-->
+											6-<!--main js-->
+7--on va demarrer le code toutes les parties sont commenter dans le codes:)

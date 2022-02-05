@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>My Cash</title>
-        <meta charset="utf-8">
+    <head> <!--balise head start-->
+        <title>My Cash</title> <!--s'affiche a la bar d'adress-->
+        <meta charset="utf-8"> <!--Specify the character encoding for the HTML-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--owl carousel css-->
         <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -14,34 +14,34 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
+        <!--chaque class ici est definie sur le fichier bootstrapp.css ou style.css-->
         <!--preloader start-->
-        <div class="preloader">
+        <div class="preloader"> <!--l'interface qui s'affiche avnt le chargement totale de la page-->
           <span></span>
         </div>
         <!--preloader end-->
 
 
         <!--navbar start-->
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top"> <!--navbar et navbar-expand-lg et fixed top sont predefinie par bootstrap-->
+            <div class="container"> <!--definie par bootstrap-->
                 <!--navbar brand-->
-              <a class="navbar-brand" href="index.html">My Cash</a>
+              <a class="navbar-brand" href="index.html">My Cash</a> <!--href pour dire aller à : ici pour retourner à la meme page donc vers le debut-->
 
               <!--toggler/collapsibe button-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"> <!--pour les petites ecrans le bouton s'affiche pour ranger le item du navbar-->
                 <i class="fas fa-bars"></i>
               </button>
               <!--navbar links-->
-              <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ms-auto ">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-scroll-nav="0" href="#">Acceuil</a>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar"> <!--le mot cle "id" pour donner une adress pour cet div en appelant "#l'id souhaiter"-->
+                <ul class="navbar-nav ms-auto "> <!--ms pour dire margin start-->
+                  <li class="nav-item active">
+                    <a class="nav-link " data-scroll-nav="0" href="#">Acceuil</a> <!--pour que cette item est l'active par defaut-->
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" data-scroll-nav="1" href="#" onMouseOver="this.style.color = 'red';" onMouseOut="this.style.color= 'white';">A propos</a> <!--change color on hover pour l'icone a propos-->
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link" data-scroll-nav="2" href="#">Services</a>
                   </li>
                   <li class="nav-item">
