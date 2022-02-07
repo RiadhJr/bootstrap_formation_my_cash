@@ -17,17 +17,17 @@
         <!--chaque class ici est definie sur le fichier bootstrapp.css ou style.css-->
         <!--preloader start-->
         <div class="preloader"> <!--l'interface qui s'affiche avnt le chargement totale de la page-->
-          <span></span>
+          <span></span> <!--pour dire badge : donner une caracteristique specifique pour une partie du affichage-->
         </div>
         <!--preloader end-->
 
 
         <!--navbar start-->
-        <nav class="navbar navbar-expand-lg fixed-top"> <!--navbar et navbar-expand-lg et fixed top sont predefinie par bootstrap-->
+        <nav class="navbar navbar-expand-lg fixed-top"> <!--navbar et navbar-expand-lg et fixed top sont predefinie par bootstrap--> 
             <div class="container"> <!--definie par bootstrap-->
                 <!--navbar brand-->
               <a class="navbar-brand" href="index.html">My Cash</a> <!--href pour dire aller à : ici pour retourner à la meme page donc vers le debut-->
-
+                        <!--navbar-brand: class predefinie pour ajouter un logo ou nom sur la navbar-->
               <!--toggler/collapsibe button-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"> <!--pour les petites ecrans le bouton s'affiche pour ranger le item du navbar-->
                 <i class="fas fa-bars"></i>
@@ -67,8 +67,8 @@
             <i class="fas fa-circle-notch effect effect-3"></i> <!--cercle-notch qui translate-->
           </div>
             <div class="container"> <!--container : c'est l'element qui enveloppe ensemble d'element-->
-                <div class="row align-items-center"> <!--row pour dire ligne : on va prendre tout la largeur du container-->
-                    <div class="col-md-7"> <!--le row est par defaut diviser sur 12 partie -->
+                <div class="row align-items-center"> <!--row pour dire ligne : on va prendre tout la largeur du container--> 
+                    <div class="col-md-7"> <!--le row est par defaut diviser sur 12 partie --> <!--md pour dire le ecran moyen et 7 pour prendre 7 colonnes sur 12-->
                         <div class="home-text">
                             <h1>La mailleur caisse pour votre business</h1>
                             <p>Lorem ipsum dolor sit amet,
@@ -77,16 +77,16 @@
                                   ut labore et dolore magna aliqua.</p>
                                   <div class="home-btn">
                                       <a href="#" data-scroll-goto="3" class="btn btn-1">Voir Demo</a>
-                                      <button type="button" class="btn btn-1 video-play-btn">
+                                      <button type="button" class="btn btn-1 video-play-btn"> <!--c'est une button-->
                                           <i class="fas fa-play"></i>
                                       </button>
                                   </div>
                         </div>
                     </div>
-                    <div class="col-md-5 text-center">
+                    <div class="col-md-5 text-center"> <!--7 colonne de l'ecran sur les ecrans moyenne et plus-->
                         <div class ="home-img">
                             <div class="circle"></div>
-                            <img src="img/1.jpg" alt="screenshoot mobile">
+                            <img src="img/1.jpg" alt="screenshoot mobile"> <!--c'est comment integrer une image-->
                         </div>
                     </div>
                 </div>
@@ -95,10 +95,10 @@
         <!--home section end-->
 
         <!--features section starat-->
-        <section class="features section-padding" id="features" data-scroll-index="1">
-            <div class="container">
+        <section class="features section-padding" id="features" data-scroll-index="1">  <!--id: pour utiliser dans footer comme reference// data-scroll-index: utiliser avec le scrollIt liaison avec la navbar-->
+            <div class="container">  
               <div class="row justify-content-center">
-                <div class="col-lg-8"> <!--bg-warning pour dire couleurjaune d'avertissement-->
+                <div class="col-lg-8"> <!--si on ajoute "bg-warning" pour dire couleurjaune d'avertissement--> <!--lg: pour dire les ecrans larges et on prend 8 colonnes sur 12-->
                   <div class="section-title">
                     <h2>awesome <span>features</span></h2>
                   </div>
@@ -137,11 +137,11 @@
         <!--features section end-->
 
         <!--fun fact section start-->
-        <section class="fun-facts section-padding">
+        <section class="fun-facts section-padding"> 
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 col-md-5 d-flex-items-center justify-content-center">
-                <div class="fun-facts-img">
+              <div class="col-lg-6 col-md-5 d-flex-items-center justify-content-center"> <!--lg-6: 6 collonne pour les large ecran// md-5: 5 colonnes pour les ecrans moyennes-->
+                <div class="fun-facts-img">                                              <!--d-flex-items-center: prendre toute la partie disponible(lg-6) et mettre le contenue en centre-->
                   <img src="img/app-screenshots/2.png" alt="fun facts">
                 </div>
               </div>
@@ -197,7 +197,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="owl-carousel screenshots-carousel">
+              <div class="owl-carousel screenshots-carousel"> <!--carousel pour mettre les objets les un aupret des autres de maniere roulante -->
                 <div class="screenshot-item">
                   <img src="img/app-screenshots/1.png" alt="screenshot">
                 </div>
@@ -230,7 +230,7 @@
               </div>
             </div>
             <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6 item-top-padding">
+              <div class="col-lg-4 col-md-6 item-top-padding">  <!--lg-4 md-6 pour afficher 3 objet sur les large ecrant et 2 objet sur le ecrant moyenne-->
                 <div class="app-download-item">
                   <i class="fab fa-google-play"></i>
                   <h3>google play</h3>
@@ -282,7 +282,7 @@
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
-                <div class="how-it-works-item line-right">
+                <div class="how-it-works-item line-right"> <!--line-right: c'est un class pour ajouter un ligne a droiyte de chaque item-->
                   <div class="step">2</div>
                   <h3>create profile</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -331,7 +331,7 @@
                      sed do eiusmod tempor.</p>
                   <h3>personne un</h3>
                   <span>UI designer</span>
-                  <div class="rating">
+                  <div class="rating"> <!--rating : c'est un class pour specifier les stars-->
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -418,8 +418,8 @@
                     <span class="periode">/monthly</span>
                   </div>
                   <div class="pricing-body">
-                    <ul>
-                      <li><i class="fas fa-check"></i>5 GB brandwidth</li>
+                    <ul> <!--liste non triée-->
+                      <li><i class="fas fa-check"></i>5 GB brandwidth</li> <!--element de la liste-->
                       <li><i class="fas fa-check"></i>free Uodate</li>
                       <li><i class="fas fa-check"></i>high regulation printing</li>
                       <li><i class="fas fa-check"></i>Branding</li>
